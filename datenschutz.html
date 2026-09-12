@@ -18,7 +18,7 @@
 <header>
   <div class="rubrik">Bürofauna</div>
   <h1>Datenschutzerklärung</h1>
-  <p class="stand">Stand: 31.08.2026</p>
+  <p class="stand">Stand: 12.09.2026</p>
 </header>
 
 <h2>1. Verantwortlicher</h2>
@@ -31,12 +31,16 @@ E-Mail: <a href="mailto:sjr.app.development@gmail.com">sjr.app.development@gmail
 <h2>2. Kurzfassung</h2>
 <p>Bürofauna speichert deine Aufzeichnungen auf deinem Gerät. Es gibt keinen Server, auf
 den die App Meetings, Sichtungen oder Notizen überträgt, und die App legt auch kein
-automatisches Backup in einer Cloud an.</p>
+automatisches Backup in einer Cloud an. Weder das Android-Backup noch das iCloud-Backup
+enthält deine Aufzeichnungen.</p>
 <p>Die kostenlose Version verwendet Google AdMob. Dabei können technische Daten und
 Gerätekennungen an Google und dessen Werbepartner übermittelt werden; welche
 Verarbeitung stattfindet, hängt insbesondere von deiner Einwilligungsentscheidung ab.
 Mit Premium werden keine Anzeigen mehr geladen — dann fragt die App auch nicht mehr nach
 einer Einwilligung.</p>
+<p>Auf iOS fragt zusätzlich das Betriebssystem, ob die App deine Werbe-Kennung verwenden
+darf (App Tracking Transparency). Ohne diese Erlaubnis wird die Kennung nicht
+übermittelt.</p>
 
 <h2>3. Daten, die auf deinem Gerät bleiben</h2>
 <p>Die App legt lokal ab: Zeitpunkt, Dauer und Pausen deiner Expeditionen (Meetings), die
@@ -46,11 +50,14 @@ Einstellungen wie die gewählte Sortierung.</p>
 Zugriff darauf und können sie weder einsehen noch wiederherstellen. Das automatische
 Android-Backup ist für diese App ausdrücklich abgeschaltet
 (<code>allowBackup=&quot;false&quot;</code> samt Ausschlussregeln), auch für die Übertragung
-auf ein neues Gerät.</p>
+auf ein neues Gerät. Auf iOS gilt dasselbe: Der Ordner, in dem die App ihre
+Aufzeichnungen ablegt, ist vom iCloud-Backup ausgenommen. In einem Cloud-Backup deines
+Geräts stehen sie deshalb nicht.</p>
 <p>Du kannst die Daten jederzeit in eine Sicherungsdatei exportieren; wohin diese Datei
-geht, entscheidest allein du über den Speichern-Dialog deines Geräts. Über „Alle meine
-Daten löschen“ im Mehr-Tab entfernst du den gesamten Bestand; beim Deinstallieren der App
-wird er ebenfalls gelöscht.</p>
+geht, entscheidest allein du über den Speichern-Dialog deines Geräts. Auf beiden Systemen
+ist diese Datei der einzige Weg, deine Aufzeichnungen auf ein neues Gerät mitzunehmen.
+Über „Alle meine Daten löschen“ im Einstellungen-Tab entfernst du den gesamten Bestand;
+beim Deinstallieren der App wird er ebenfalls gelöscht.</p>
 
 <h2>4. Werbung (Google AdMob) und Einwilligung</h2>
 <p>In der kostenlosen Version bindet die App Werbung von Google AdMob ein. Anbieter ist
@@ -83,8 +90,22 @@ kannst.</p>
 insbesondere in den USA — sowohl durch Google als auch durch die Werbepartner. Google
 verweist hierfür unter anderem auf das EU-US Data Privacy Framework sowie — soweit
 erforderlich — auf Standardvertragsklauseln.</p>
-<p>Du kannst deine Entscheidung jederzeit ändern: im Mehr-Tab unter
-„Datenschutzoptionen“.</p>
+<h3>Zusätzlich auf iOS: App Tracking Transparency</h3>
+<p>Auf iOS fragt Apple über einen Systemdialog, ob Bürofauna deine Werbe-Kennung (IDFA)
+verwenden darf, um deine Aktivitäten in Apps und auf Websites anderer Unternehmen zu
+erfassen. Davor zeigt die App eine kurze Erklärung: „Wird nur verwendet, um dir Werbung
+anzuzeigen, die zu dir passt. Die Gratis-Version finanziert sich darüber.“ Der Dialog
+erscheint einmal, nach der DSGVO-Einwilligung. Beide Entscheidungen sind unabhängig
+voneinander.</p>
+<p>Ohne „Erlauben“ wird die Werbe-Kennung nicht an Google übermittelt. Du siehst weiterhin
+Anzeigen, aber nicht personalisiert. Die App bleibt vollständig nutzbar; Nachteile
+entstehen dir nicht.</p>
+<p>Zur Erfolgsmessung von Anzeigen kann Google Apples Verfahren SKAdNetwork nutzen. Dabei
+wird keine Kennung deines Geräts übertragen.</p>
+<p>Mit Premium wird keine Werbung geladen. Der Dialog erscheint dort nicht.</p>
+<p>Du kannst deine Entscheidung jederzeit ändern: im Einstellungen-Tab unter
+„Datenschutzoptionen“. Die Tracking-Erlaubnis auf iOS änderst du in den iOS-Einstellungen
+unter Datenschutz &amp; Sicherheit → Tracking, beim Schalter für Bürofauna.</p>
 <p>Weitere Informationen:
 <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> und
 <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
@@ -95,6 +116,8 @@ bezogen hast. Je nach Bezugsquelle ist das:</p>
 <ul>
 <li><strong>Google Play Store:</strong> Abwicklung durch Google Ireland Limited.</li>
 <li><strong>Amazon Appstore:</strong> Abwicklung durch Amazon.</li>
+<li><strong>Apple App Store:</strong> Abwicklung durch Apple Distribution International
+Ltd., Cork, Irland.</li>
 </ul>
 <p>In allen Fällen gilt dasselbe: Zahlungs- und Abrechnungsdaten verarbeitet der jeweilige
 Store-Betreiber; wir erhalten keine vollständigen Zahlungsdaten wie Karten- oder
@@ -113,6 +136,7 @@ von Google AdMob stattfindenden Verarbeitungen — dazu gehören auch Analyse-Zw
 Google — sind in Abschnitt 4 beschrieben.</p>
 
 <h2>7. Berechtigungen</h2>
+<h3>Android</h3>
 <ul>
 <li><strong>Mitteilungen:</strong> für die dauerhafte Mitteilung während einer laufenden
 Expedition mit Pause- und Stopp-Aktion. Wird sie verweigert, läuft die Zeitmessung
@@ -120,9 +144,20 @@ unverändert weiter — nur eben unsichtbar.</li>
 <li><strong>Vordergrunddienst:</strong> damit die Zeitmessung eines laufenden Meetings
 fortläuft, während die App im Hintergrund ist.</li>
 </ul>
-<p>Standort, Kamera, Mikrofon, Kontakte und Speicherzugriff verlangt die App nicht; die
-Sicherungsdatei wird ausschließlich über den Dateidialog des Systems geschrieben und
-gelesen.</p>
+<h3>iOS</h3>
+<ul>
+<li><strong>Tracking:</strong> der Systemdialog zur Werbe-Kennung. Einzelheiten stehen in
+Abschnitt 4.</li>
+<li><strong>Live Activity:</strong> die laufende Expedition wird auf dem Sperrbildschirm
+und in der Dynamic Island angezeigt, mit Pause- und Stopp-Knopf. Dafür fragt iOS keine
+Erlaubnis ab. Die Anzeige braucht keine laufende App: Die Uhr zeigt die Zeit, die seit dem
+Start vergangen ist, und die Dauer selbst ergibt sich aus den gespeicherten Zeitpunkten.
+Beendet iOS die Anzeige nach einigen Stunden, läuft deine Expedition unverändert weiter;
+beim nächsten Öffnen der App ist sie da.</li>
+</ul>
+<p>Auf beiden Systemen gilt: Standort, Kamera, Mikrofon, Kontakte und Speicherzugriff
+verlangt die App nicht; die Sicherungsdatei wird ausschließlich über den Dateidialog des
+Systems geschrieben und gelesen.</p>
 
 <h2>8. Deine Rechte</h2>
 <p>Dir stehen nach Maßgabe der gesetzlichen Voraussetzungen insbesondere die Rechte auf
@@ -130,7 +165,8 @@ Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und
 Datenübertragbarkeit zu. Soweit eine Verarbeitung auf berechtigten Interessen beruht,
 kann zusätzlich ein Widerspruchsrecht bestehen. Eine erteilte Einwilligung kannst du
 jederzeit mit Wirkung für die Zukunft widerrufen — für die Werbe-Einwilligung über
-„Datenschutzoptionen“ im Mehr-Tab.</p>
+„Datenschutzoptionen“ im Einstellungen-Tab, für die Tracking-Erlaubnis auf iOS über die
+iOS-Einstellungen unter Datenschutz &amp; Sicherheit → Tracking.</p>
 <p>Da wir selbst keine personenbezogenen Daten von dir speichern, richten sich Anfragen zu
 den über Werbung verarbeiteten Daten in der Regel an Google. Für Fragen zur App erreichst
 du uns unter der oben genannten Adresse.</p>

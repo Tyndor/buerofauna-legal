@@ -34,6 +34,11 @@ header { border-bottom: 1px solid var(--rule); padding-bottom: 14px; margin-bott
 
 h1 { font-size: 30px; line-height: 1.2; margin: 6px 0 0; }
 h2 { font-size: 20px; margin: 34px 0 10px; }
+/* Dritte Ebene, seit die Datenschutzerklaerung einen Unterabschnitt hat
+   (App Tracking Transparency, 12.09.2026). Ohne eigene Regel naehme der
+   Browser seine Vorgabe — groesser als der Fliesstext, aber mit fremden
+   Abstaenden. */
+h3 { font-size: 16px; margin: 24px 0 8px; }
 
 a { color: var(--seal); }
 
