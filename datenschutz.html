@@ -31,8 +31,8 @@ E-Mail: <a href="mailto:sjr.app.development@gmail.com">sjr.app.development@gmail
 <h2>2. Kurzfassung</h2>
 <p>Bürofauna speichert deine Aufzeichnungen auf deinem Gerät. Es gibt keinen Server, auf
 den die App Meetings, Sichtungen oder Notizen überträgt, und die App legt auch kein
-automatisches Backup in einer Cloud an. Weder das Android-Backup noch das iCloud-Backup
-enthält deine Aufzeichnungen.</p>
+automatisches Backup in einer Cloud an. Sie ist so eingerichtet, dass Android- und
+iCloud-Backup ihre Aufzeichnungen auslassen.</p>
 <p>Die kostenlose Version verwendet Google AdMob. Dabei können technische Daten und
 Gerätekennungen an Google und dessen Werbepartner übermittelt werden; welche
 Verarbeitung stattfindet, hängt insbesondere von deiner Einwilligungsentscheidung ab.
@@ -47,24 +47,27 @@ darf (App Tracking Transparency). Ohne diese Erlaubnis wird die Kennung nicht
 Wetter-Bewertung, optionale Titel und Notizen, die zugeordneten Archetypen sowie
 Einstellungen wie die gewählte Sortierung.</p>
 <p>Diese Daten werden nicht an uns und nicht an Dritte übermittelt. Wir haben keinen
-Zugriff darauf und können sie weder einsehen noch wiederherstellen. Das automatische
-Android-Backup ist für diese App ausdrücklich abgeschaltet
-(<code>allowBackup=&quot;false&quot;</code> samt Ausschlussregeln), auch für die Übertragung
-auf ein neues Gerät. Auf iOS gilt dasselbe: Der Ordner, in dem die App ihre
-Aufzeichnungen ablegt, ist vom iCloud-Backup ausgenommen. In einem Cloud-Backup deines
-Geräts stehen sie deshalb nicht.</p>
+Zugriff darauf und können sie weder einsehen noch wiederherstellen. Die App ist so
+konfiguriert, dass ihre Aufzeichnungen vom automatischen Android-Backup ausgeschlossen
+sind (<code>allowBackup=&quot;false&quot;</code> samt Ausschlussregeln, auch für die
+Übertragung auf ein neues Gerät); auf iOS ist der Ordner mit den Aufzeichnungen vom
+iCloud-Backup ausgenommen. Was Betriebssystem und Gerätehersteller darüber hinaus sichern,
+liegt außerhalb unseres Einflusses. Verlass dich für den Gerätewechsel deshalb auf die
+Exportfunktion.</p>
 <p>Du kannst die Daten jederzeit in eine Sicherungsdatei exportieren; wohin diese Datei
 geht, entscheidest allein du über den Speichern-Dialog deines Geräts. Auf beiden Systemen
-ist diese Datei der einzige Weg, deine Aufzeichnungen auf ein neues Gerät mitzunehmen.
-Über „Alle meine Daten löschen“ im Einstellungen-Tab entfernst du den gesamten Bestand;
-beim Deinstallieren der App wird er ebenfalls gelöscht.</p>
+ist diese Datei der von Bürofauna vorgesehene Weg, deine Aufzeichnungen auf ein neues
+Gerät mitzunehmen. Über „Alle meine Daten löschen“ im Einstellungen-Tab entfernst du den
+gesamten Bestand; beim Deinstallieren der App wird er ebenfalls gelöscht.</p>
 
 <h2>4. Werbung (Google AdMob) und Einwilligung</h2>
 <p>In der kostenlosen Version bindet die App Werbung von Google AdMob ein. Anbieter ist
 Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
-<p>Dabei kann Google insbesondere die IP-Adresse, Geräte- und Werbekennungen,
-Informationen über Interaktionen mit der App und mit Anzeigen sowie Diagnose- und
-Leistungsdaten verarbeiten. Google nennt als Zwecke Werbung, Analyse und
+<p>Dabei kann Google insbesondere die IP-Adresse und einen daraus abgeleiteten ungefähren
+Standort, Geräte- und Werbekennungen, Informationen über App-Starts und Interaktionen mit
+der App und mit Anzeigen sowie Diagnose- und Leistungsdaten verarbeiten. Welche Kennungen
+verfügbar sind und wofür sie verwendet werden dürfen, hängt von deiner Einwilligung und
+deinen Systemeinstellungen ab. Google nennt als Zwecke Werbung, Analyse und
 Betrugsprävention.</p>
 <p><strong>Neben Google sind Werbepartner beteiligt.</strong> Willigst du ein, können auch
 drittanbietende Werbeunternehmen diese Daten verarbeiten und Informationen auf deinem
@@ -86,19 +89,32 @@ Weitere Verarbeitungen durch Google und die Werbepartner richten sich nach deren
 Angaben zu Zwecken und Rechtsgrundlagen; einzelne Anbieter stützen sich dabei auf ein
 berechtigtes Interesse, dem du im Dialog unter „Optionen verwalten“ widersprechen
 kannst.</p>
+<p>Lehnst du ab, können gegebenenfalls eingeschränkte Anzeigen angefordert werden. Auch
+dafür wird deine IP-Adresse an Google übertragen, weil sich eine Anzeige sonst nicht
+ausliefern lässt. Rechtsgrundlage ist insoweit § 25 Abs. 2 Nr. 2 TDDDG und Art. 6 Abs. 1
+lit. f DSGVO, also unser Interesse, die Gratis-Version über Werbung zu finanzieren.</p>
 <p>Eine Verarbeitung kann auch außerhalb des Europäischen Wirtschaftsraums stattfinden,
 insbesondere in den USA — sowohl durch Google als auch durch die Werbepartner. Google
 verweist hierfür unter anderem auf das EU-US Data Privacy Framework sowie — soweit
 erforderlich — auf Standardvertragsklauseln.</p>
+<p>Speicherdauer: Die über AdMob verarbeiteten Daten legen weder wir noch die App auf
+deinem Gerät ab. Wie lange Google und die Werbepartner sie aufbewahren, richtet sich nach
+Datenart und Zweck und steht in deren Datenschutzhinweisen; Google gibt etwa an,
+Werbe-Protokolldaten nach festen Fristen zu anonymisieren. Einzelheiten stehen in den
+unten verlinkten Google-Hinweisen und in den Angaben der Partner im
+Einwilligungsdialog.</p>
 <h3>Zusätzlich auf iOS: App Tracking Transparency</h3>
 <p>Auf iOS fragt Apple über einen Systemdialog, ob Bürofauna deine Werbe-Kennung (IDFA)
 verwenden darf, um deine Aktivitäten in Apps und auf Websites anderer Unternehmen zu
-erfassen. Davor zeigt die App eine kurze Erklärung: „Wird nur verwendet, um dir Werbung
-anzuzeigen, die zu dir passt. Die Gratis-Version finanziert sich darüber.“ Der Dialog
-erscheint einmal, nach der DSGVO-Einwilligung. Beide Entscheidungen sind unabhängig
-voneinander.</p>
-<p>Ohne „Erlauben“ wird die Werbe-Kennung nicht an Google übermittelt. Du siehst weiterhin
-Anzeigen, aber nicht personalisiert. Die App bleibt vollständig nutzbar; Nachteile
+erfassen. Davor zeigt die App eine kurze Erklärung: „Erlaubt die Verwendung der
+Werbe-Kennung für Werbung, die zu dir passt, und für deren Messung. Die Gratis-Version
+finanziert sich darüber.“ iOS zeigt den Dialog grundsätzlich einmal pro Installation, nach
+der DSGVO-Einwilligung, sofern deine Systemeinstellungen die Anfrage zulassen. Beide
+Entscheidungen sind unabhängig voneinander.</p>
+<p>Ohne „Erlauben“ erhält die App keinen Zugriff auf die Werbe-Kennung (IDFA), und Google
+darf dich nicht über Apps und Websites anderer Unternehmen hinweg verfolgen. Welche
+Werbung du dann siehst und welche anderen Kennungen Google verwenden darf, richtet sich
+nach deiner Auswahl im Einwilligungsdialog. Die App bleibt vollständig nutzbar; Nachteile
 entstehen dir nicht.</p>
 <p>Zur Erfolgsmessung von Anzeigen kann Google Apples Verfahren SKAdNetwork nutzen. Dabei
 wird keine Kennung deines Geräts übertragen.</p>
@@ -114,10 +130,15 @@ unter Datenschutz &amp; Sicherheit → Tracking, beim Schalter für Bürofauna.<
 <p>Der einmalige In-App-Kauf „Premium“ wird von dem Store abgewickelt, aus dem du die App
 bezogen hast. Je nach Bezugsquelle ist das:</p>
 <ul>
-<li><strong>Google Play Store:</strong> Abwicklung durch Google Ireland Limited.</li>
-<li><strong>Amazon Appstore:</strong> Abwicklung durch Amazon.</li>
+<li><strong>Google Play Store:</strong> Abwicklung durch Google Ireland Limited, Gordon
+House, Barrow Street, Dublin 4, Irland. Datenschutzhinweise:
+<a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+<li><strong>Amazon Appstore:</strong> Abwicklung durch Amazon Media EU S.à r.l.,
+38 avenue John F. Kennedy, L-1855 Luxemburg. Datenschutzhinweise:
+<a href="https://www.amazon.de/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ">amazon.de/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ</a></li>
 <li><strong>Apple App Store:</strong> Abwicklung durch Apple Distribution International
-Ltd., Cork, Irland.</li>
+Ltd., Cork, Irland. Datenschutzhinweise:
+<a href="https://www.apple.com/de/legal/privacy/data/de/app-store/">apple.com/de/legal/privacy/data/de/app-store/</a></li>
 </ul>
 <p>In allen Fällen gilt dasselbe: Zahlungs- und Abrechnungsdaten verarbeitet der jeweilige
 Store-Betreiber; wir erhalten keine vollständigen Zahlungsdaten wie Karten- oder
@@ -129,7 +150,7 @@ freizugeben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung)
 einer anderen Quelle bezieht, hat dort keinen Kauf; die Wiederherstellung läuft immer über
 den Store, in dem gekauft wurde.</p>
 
-<h2>6. Keine eigenen Analyse- oder Tracking-Dienste</h2>
+<h2>6. Keine zusätzlichen Analyse- oder Tracking-Dienste</h2>
 <p>Wir setzen keine eigenen Analyse-, Tracking- oder Absturzberichts-Dienste ein. Es gibt
 keine Nutzerkonten, keine Registrierung und keine Profilbildung durch uns. Die im Rahmen
 von Google AdMob stattfindenden Verarbeitungen — dazu gehören auch Analyse-Zwecke von
@@ -150,8 +171,10 @@ fortläuft, während die App im Hintergrund ist.</li>
 Abschnitt 4.</li>
 <li><strong>Live Activity:</strong> die laufende Expedition wird auf dem Sperrbildschirm
 und in der Dynamic Island angezeigt, mit Pause- und Stopp-Knopf. Dafür fragt iOS keine
-Erlaubnis ab. Die Anzeige braucht keine laufende App: Die Uhr zeigt die Zeit, die seit dem
-Start vergangen ist, und die Dauer selbst ergibt sich aus den gespeicherten Zeitpunkten.
+Erlaubnis ab; die Anzeige wird ausschließlich auf dem Gerät aktualisiert, es werden keine
+Daten an Apple-Server übertragen. Die Anzeige braucht keine laufende App: Die Uhr zeigt
+die Zeit, die seit dem Start vergangen ist, und die Dauer selbst ergibt sich aus den
+gespeicherten Zeitpunkten.
 Beendet iOS die Anzeige nach einigen Stunden, läuft deine Expedition unverändert weiter;
 beim nächsten Öffnen der App ist sie da.</li>
 </ul>
@@ -159,7 +182,16 @@ beim nächsten Öffnen der App ist sie da.</li>
 verlangt die App nicht; die Sicherungsdatei wird ausschließlich über den Dateidialog des
 Systems geschrieben und gelesen.</p>
 
-<h2>8. Deine Rechte</h2>
+<h2>8. Kontakt mit uns</h2>
+<p>Schreibst du uns per E-Mail, verarbeiten wir deine Adresse und den Inhalt der
+Nachricht, um deine Anfrage zu beantworten. Bei Fragen zum Kauf geschieht das auf
+Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sonst auf Grundlage von Art. 6 Abs. 1 lit. f
+DSGVO (unser Interesse, deine Anfrage zu beantworten). Das Postfach wird von Google
+(Gmail) bereitgestellt; Google verarbeitet die Nachrichten dabei nach seinen eigenen
+Datenschutzhinweisen. Wir löschen den Verlauf, sobald die Anfrage erledigt ist und keine
+Aufbewahrungspflicht besteht.</p>
+
+<h2>9. Deine Rechte</h2>
 <p>Dir stehen nach Maßgabe der gesetzlichen Voraussetzungen insbesondere die Rechte auf
 Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und
 Datenübertragbarkeit zu. Soweit eine Verarbeitung auf berechtigten Interessen beruht,
@@ -167,14 +199,25 @@ kann zusätzlich ein Widerspruchsrecht bestehen. Eine erteilte Einwilligung kann
 jederzeit mit Wirkung für die Zukunft widerrufen — für die Werbe-Einwilligung über
 „Datenschutzoptionen“ im Einstellungen-Tab, für die Tracking-Erlaubnis auf iOS über die
 iOS-Einstellungen unter Datenschutz &amp; Sicherheit → Tracking.</p>
-<p>Da wir selbst keine personenbezogenen Daten von dir speichern, richten sich Anfragen zu
-den über Werbung verarbeiteten Daten in der Regel an Google. Für Fragen zur App erreichst
-du uns unter der oben genannten Adresse.</p>
-<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren —
-zuständig ist für uns die Landesbeauftragte für den Datenschutz Niedersachsen; du kannst
-dich aber an jede Aufsichtsbehörde wenden.</p>
+<p>Zur Ausübung deiner Rechte kannst du dich jederzeit an uns wenden (Kontaktdaten oben).
+Deine Aufzeichnungen liegen ausschließlich auf deinem Gerät; darauf haben wir keinen
+Zugriff, und die von Google verarbeiteten Werbedaten liegen nicht bei uns. Soweit Google
+oder ein Werbepartner für eine Verarbeitung eigenständig verantwortlich ist, kannst du
+deine Rechte zusätzlich direkt dort geltend machen. Die Anbieter und ihre Kontaktwege
+findest du im Einwilligungsdialog unter „Liste der Partner“.</p>
+<p>Du hast außerdem das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren,
+insbesondere bei der für uns zuständigen Landesbeauftragten für den Datenschutz
+Niedersachsen oder bei der Aufsichtsbehörde an deinem Wohnort, deinem Arbeitsplatz oder am
+Ort des mutmaßlichen Verstoßes.</p>
 
-<h2>9. Änderungen</h2>
+<h2>10. Diese Website</h2>
+<p>Die Rechtstexte liegen bei GitHub Pages (GitHub, Inc. bzw. GitHub B.V.). Beim Aufruf
+verarbeitet GitHub technisch notwendige Verbindungsdaten wie deine IP-Adresse, um die
+Seite auszuliefern (Art. 6 Abs. 1 lit. f DSGVO). Wir selbst setzen hier keine Cookies und
+keine Analyse ein. Näheres in GitHubs Datenschutzerklärung:
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement</a></p>
+
+<h2>11. Änderungen</h2>
 <p>Ändert sich die Datenverarbeitung der App, wird diese Erklärung angepasst. Maßgeblich
 ist die jeweils hier veröffentlichte Fassung.</p>
 
