@@ -52,7 +52,20 @@ h2 { font-size: 20px; margin: 34px 0 10px; }
    Abstaenden. */
 h3 { font-size: 16px; margin: 24px 0 8px; }
 
-a { color: var(--seal); }
+/* **Verweise brechen IMMER**, und zwar an jeder Stelle (Nutzer-Befund am
+   Telefon, 2026-09-22 — es war die Samsung-Adresse). `break-word` am Körper
+   bricht ein Wort erst, wenn es allein nicht in eine Zeile passt, und lässt
+   dem Browser dabei Spielraum; `anywhere` nimmt ihn. Die Adressen hier sind
+   der einzige Text ohne Leerzeichen, also ist das die passende Stelle:
+   Fliesstext bleibt unangetastet.
+
+   Warum es überhaupt auffällt: Wo ein Wort breiter ist als die Zeile, wird
+   die SEITE breiter, und der Grund des Körpers endet trotzdem am Bildrand —
+   rechts daneben steht dann leerer Platz. */
+a {
+  color: var(--seal);
+  overflow-wrap: anywhere;
+}
 
 address {
   font-style: normal;
