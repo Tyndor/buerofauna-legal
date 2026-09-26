@@ -106,3 +106,15 @@ nav a { margin-right: 18px; }
   address { background: #221c15; }
   .platzhalter { background: #4a3a18; }
 }
+
+/* Sprachumschalter oben rechts im Kopf jeder Seite (2026-09-26). In der
+   Schrift der Rubrik; die aktuelle Sprache ist kein Link, sondern
+   hervorgehoben. */
+.sprachen {
+  float: right;
+  font-family: ui-monospace, "Courier New", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+}
+.sprachen [aria-current] { color: var(--ink); font-weight: 600; }
